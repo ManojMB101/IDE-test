@@ -1,0 +1,133 @@
+{
+  "id": "768e16a0-7b7d-4287-ba74-e71ab7791930",
+  "version": "2.0",
+  "name": "TestIDE",
+  "url": "http://zero.webappsecurity.com",
+  "tests": [{
+    "id": "a6245bf6-de7c-4159-8e2e-a2d01f7fb611",
+    "name": "test1",
+    "commands": [{
+      "id": "b5cf321e-1281-4d04-a04d-4c7ee6771559",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d7095d2-a3c1-41d5-aaa4-f977b91de7d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1684x796",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5a6f291-5065-47cc-98ca-778235ac3f5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=signin_button",
+      "targets": [
+        ["id=signin_button", "id"],
+        ["css=#signin_button", "css:finder"],
+        ["xpath=//button[@id='signin_button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Signin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57b0c172-1f0d-4f6a-914d-38a04dae855e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=user_login", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "09dc8cbb-ba23-45b5-b469-d80511582d5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user_password", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2608106b-adad-41ee-9091-45fae983b79e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user_password", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "34769731-ed45-4149-ae7c-816b9854c466",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16ec4c0c-63da-485d-a1d0-293f96c880ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account Activity",
+      "targets": [
+        ["linkText=Account Activity", "linkText"],
+        ["css=#account_activity_tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Activity')]", "xpath:link"],
+        ["xpath=//li[@id='account_activity_tab']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bank/redirect.html?url=account-activity.html')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Activity')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "947fb442-2ac2-48f3-9462-a9b78cd8ef64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Find Transactions",
+      "targets": [
+        ["linkText=Find Transactions", "linkText"],
+        ["css=.ui-state-hover > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Find Transactions')]", "xpath:link"],
+        ["xpath=//div[@id='tabs']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#ui-tabs-2')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Find Transactions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "09a35f46-8ba9-4c6b-be5d-6827b819e18a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6245bf6-de7c-4159-8e2e-a2d01f7fb611"]
+  }],
+  "urls": ["http://zero.webappsecurity.com/"],
+  "plugins": []
+}
